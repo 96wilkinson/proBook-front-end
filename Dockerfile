@@ -1,5 +1,6 @@
 FROM nginx:latest
 
+COPY ./build /var/www
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY _DS_Store /opt/proBook-front-end/
 COPY index.html /opt/proBook-front-end/
